@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  name       String?
+  email      String   @unique
+  telefone   String
+  password   String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  deletedAt  DateTime?
+  items      Item[]   @relation("UserItems")
+}
+
+model Item {
+  id          Int       @id @default(autoincrement())
+  name        String
+  descricao   String
+  categoriaId Int
+  categoria   Categoria @relation(fields: [categoriaId], references: [id])
+  date        DateTime
+  location    String
+  contact     String
+  foto        String?   // Foto é opcional
+  status      Status
+  codigoUnico String    @unique
+  userId      Int
+  user        User      @relation("UserItems", fields: [userId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  deletedAt   DateTime?
+}
+
+model Categoria {
+  id         Int       @id @default(autoincrement())
+  nome       String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  items      Item[]    @relation
+}
+
+enum Status {
+  PERDIDO
+  ENCONTRADO
+}
