@@ -33,7 +33,7 @@ A Foundly API pode ser executada com **Node.js**.
 1. Clone o repositório da **Foundly API**:
 
    ```bash
-   git clone https://github.com/seu-usuario/foundly-api.git
+   git clone https://github.com/izaacledererjunior/api-foundly
    cd foundly-api
    ```
 
