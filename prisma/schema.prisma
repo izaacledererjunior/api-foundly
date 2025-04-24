@@ -30,7 +30,7 @@ model Item {
   contact     String
   foto        String?   // Foto é opcional
   status      Status
-  codigoUnico String    @unique
+  codigoUnico Int    @unique @default(autoincrement())
   userId      Int
   user        User      @relation("UserItems", fields: [userId], references: [id])
   createdAt   DateTime  @default(now())
