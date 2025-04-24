@@ -77,9 +77,9 @@ A Foundly API pode ser executada com **Node.js**.
 
 ## 🌐 Hospedagem
 
-Este projeto está hospedado na **Vercel** e pode ser acessado através do seguinte link:
+Este projeto está hospedado na **AWS EC2** e pode ser acessado através do seguinte link:
 
-- [Foundly API - Vercel](https://api-foundly.vercel.app)
+- [Foundly API - AWS](http://3.145.188.237:8000)
 
 ---
 
@@ -89,6 +89,15 @@ O banco de dados utilizado pela Foundly API está hospedado em um **Amazon RDS**
 
 - **Banco de Dados**: Amazon RDS (PostgreSQL)
 - **Armazenamento de Imagens**: AWS S3
+
+---
+
+## 📄 Documentação da API
+
+A API é documentada com Swagger, e você pode acessá-la em:
+
+- Localmente: [http://localhost:8000/api-docs](http://localhost:3000/api-docs)
+- Produção: [Documentação Foundly](http://3.145.188.237:8000/api-docs/)
 
 ---
 
@@ -196,15 +205,6 @@ O banco de dados utilizado pela Foundly API está hospedado em um **Amazon RDS**
 #### Deletar Categoria
 **DELETE** `/api/categories/{id}`
 - Deleta uma categoria pelo ID.
-
----
-
-## 📄 Documentação da API
-
-A API é documentada com Swagger, e você pode acessá-la em:
-
-- Localmente: [http://localhost:8000/api-docs](http://localhost:3000/api-docs)
-- Produção: [Documentação Foundly](https://api-foundly.vercel.app/api-docs)
 
 ---
 
