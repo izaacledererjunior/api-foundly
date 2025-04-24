@@ -50,7 +50,7 @@ export default {
         type: 'object',
         properties: {
           id: { type: 'integer' },
-          nome: { type: 'string' },
+          name: { type: 'string' },
           createdAt: { type: 'string', format: 'date-time' },
           updatedAt: { type: 'string', format: 'date-time' },
         },
@@ -503,9 +503,9 @@ export default {
               schema: {
                 type: 'object',
                 properties: {
-                  nome: { type: 'string' },
+                  name: { type: 'string' },
                 },
-                required: ['nome'],
+                required: ['name'],
               },
             },
           },
@@ -522,7 +522,7 @@ export default {
         description: 'Returns the details of a category by its ID.',
         parameters: [
           {
-            nome: 'id',
+            name: 'id',
             in: 'path',
             required: true,
             schema: { type: 'integer' },
@@ -547,7 +547,7 @@ export default {
         description: 'Updates the details of an existing category.',
         parameters: [
           {
-            nome: 'id',
+            name: 'id',
             in: 'path',
             required: true,
             schema: { type: 'integer' },
@@ -562,7 +562,7 @@ export default {
                 properties: {
                   nome: { type: 'string' },
                 },
-                required: ['nome'],
+                required: ['name'],
               },
             },
           },
@@ -577,7 +577,7 @@ export default {
         description: 'Deletes a category by its ID.',
         parameters: [
           {
-            nome: 'id',
+            name: 'id',
             in: 'path',
             required: true,
             schema: { type: 'integer' },
