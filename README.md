@@ -219,6 +219,7 @@ A API é documentada com Swagger, e você pode acessá-la em:
 - **Email**: ingridalmeida3197@gmail.com
 - **Email**: eduardolcb18@gmail.com
 - **Email**: jonasmonteirotst@gmail.com
+- **Email**: sunamitasantana56@gmail.com
 
 ---
 
