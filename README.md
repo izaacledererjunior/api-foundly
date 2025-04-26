@@ -1,8 +1,9 @@
 <div align="center">
   <a name="readme-top"></a>
 
-  <h1>Foundly API</h1>
-  <h3>Projeto Bootcamp Atlântico Avanti<h3>
+  <h1>Projeto Bootcamp Atlântico Avanti<h1>
+  <h2>Foundly API</h2>
+  
 
 🚧 **ATENÇÃO: ESTE PROJETO ESTÁ EM DESENVOLVIMENTO!** 🚧
 
