@@ -5,8 +5,6 @@
   <h2>Foundly API</h2>
   
 
-🚧 **ATENÇÃO: ESTE PROJETO ESTÁ EM DESENVOLVIMENTO!** 🚧
-
   <p>
      API para gerenciar itens perdidos e encontrados, usuários e categorias.
   </p>
